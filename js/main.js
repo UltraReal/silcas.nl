@@ -121,10 +121,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero');
     
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            header.classList.add('sticky');
+        if (window.scrollY > 30) {
+            header.classList.add('scrolled');
         } else {
-            header.classList.remove('sticky');
+            header.classList.remove('scrolled');
         }
     });
     

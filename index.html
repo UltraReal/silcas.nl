@@ -49,10 +49,12 @@ t<!DOCTYPE html>
                     <a href="#music" class="btn btn-secondary">Mijn Muziek</a>
                 </div>
                 <div class="social-icons">
-                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-spotify"></i></a>
+                    <a href="https://www.tiktok.com/@tsf_silcas" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/silcasdewoordenaar/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCucenCmwZnzndMhohpN7oEA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://open.spotify.com/artist/2hNhIx6AXSs7OYaFQDIJQZ?si=Z49WaxhfTxqR7kFOo-74xg" target="_blank"><i class="fab fa-spotify"></i></a>
+                    <a href="https://discord.gg/tsfsillygang" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.twitch.tv/tsf_silcas" target="_blank"><i class="fab fa-twitch"></i></a>
                 </div>
                 <div class="scroll-indicator">
                     <a href="#about">
@@ -80,10 +82,7 @@ t<!DOCTYPE html>
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-container">
-                        <!-- Placeholder voor Silcas foto -->
-                        <div class="placeholder-image">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <img src="img/silcasv2.png" alt="Silcas" class="profile-image">
                     </div>
                 </div>
                 <div class="about-text">
@@ -129,7 +128,7 @@ t<!DOCTYPE html>
                         <li><i class="fas fa-check"></i> Interactie met kijkers</li>
                         <li><i class="fas fa-check"></i> Challenges & speciale events</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Bekijk Mijn TikTok</a>
+                    <a href="https://www.tiktok.com/@tsf_silcas" class="btn btn-primary">Bekijk Mijn TikTok</a>
                 </div>
                 <div class="gaming-showcase">
                     <div class="video-container">
@@ -187,9 +186,37 @@ t<!DOCTYPE html>
             <div class="music-content">
                 <div class="music-showcase">
                     <div class="music-player">
-                        <!-- Placeholder voor muziekspeler -->
-                        <div class="placeholder-player">
-                            <i class="fas fa-music"></i>
+                        <div class="custom-audio-player">
+                            <div class="player-controls">
+                                <div class="player-artwork">
+                                    <img src="img/silcasv2.png" alt="Album Artwork">
+                                </div>
+                                <div class="player-info">
+                                    <div class="now-playing">
+                                        <span class="track-title">Selecteer een track</span>
+                                        <span class="track-artist">Silcas</span>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress-bar">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <div class="time-info">
+                                            <span class="current-time">0:00</span>
+                                            <span class="duration">0:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="control-buttons">
+                                        <button class="prev-btn"><i class="fas fa-step-backward"></i></button>
+                                        <button class="play-btn"><i class="fas fa-play"></i></button>
+                                        <button class="next-btn"><i class="fas fa-step-forward"></i></button>
+                                        <div class="volume-container">
+                                            <i class="fas fa-volume-up"></i>
+                                            <input type="range" class="volume-slider" min="0" max="100" value="80">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <audio id="audio-player" preload="metadata"></audio>
                         </div>
                     </div>
                 </div>
@@ -197,43 +224,43 @@ t<!DOCTYPE html>
                     <h3>Rap & Beats</h3>
                     <p>Naast gaming maak ik ook rap muziek. Check mijn nieuwste tracks en blijf op de hoogte van nieuwe releases!</p>
                     <div class="music-platforms">
-                        <a href="#" class="platform-link"><i class="fab fa-spotify"></i> Spotify</a>
-                        <a href="#" class="platform-link"><i class="fab fa-youtube"></i> YouTube</a>
-                        <a href="#" class="platform-link"><i class="fab fa-soundcloud"></i> SoundCloud</a>
+                        <a href="https://open.spotify.com/artist/2hNhIx6AXSs7OYaFQDIJQZ?si=Z49WaxhfTxqR7kFOo-74xg&nd=1&dlsi=f6254bee052b4e8e" class="platform-link"><i class="fab fa-spotify"></i> Spotify</a>
+                        <a href="https://www.youtube.com/channel/UCucenCmwZnzndMhohpN7oEA" class="platform-link"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="https://soundcloud.com/silcas" class="platform-link"><i class="fab fa-soundcloud"></i> SoundCloud</a>
                     </div>
                     <a href="#" class="btn btn-secondary">Beluister Mijn Muziek</a>
                 </div>
             </div>
             <div class="tracks-list">
-                <div class="track">
+                <div class="track" data-src="muziek/Doe Je Gebed [d0EtCpFuyIk].mp3">
                     <div class="track-number">01</div>
                     <div class="track-info">
-                        <h4>Track Titel 1</h4>
+                        <h4>Doe Je Gebed</h4>
                         <p>Silcas</p>
                     </div>
-                    <div class="track-duration">3:45</div>
+                    <div class="track-duration">--:--</div>
                     <div class="track-play">
                         <i class="fas fa-play"></i>
                     </div>
                 </div>
-                <div class="track">
+                <div class="track" data-src="muziek/Mijn graf [hhQJtcxrMFA].mp3">
                     <div class="track-number">02</div>
                     <div class="track-info">
-                        <h4>Track Titel 2</h4>
+                        <h4>Mijn Graf</h4>
                         <p>Silcas</p>
                     </div>
-                    <div class="track-duration">2:55</div>
+                    <div class="track-duration">--:--</div>
                     <div class="track-play">
                         <i class="fas fa-play"></i>
                     </div>
                 </div>
-                <div class="track">
+                <div class="track" data-src="muziek/Westside (feat. DP) [OkoALRaFhKg].mp3">
                     <div class="track-number">03</div>
                     <div class="track-info">
-                        <h4>Track Titel 3</h4>
+                        <h4>Westside (feat. DP)</h4>
                         <p>Silcas</p>
                     </div>
-                    <div class="track-duration">4:20</div>
+                    <div class="track-duration">--:--</div>
                     <div class="track-play">
                         <i class="fas fa-play"></i>
                     </div>
@@ -300,7 +327,29 @@ t<!DOCTYPE html>
                     <img src="statis/silcas.png" alt="Silcas Logo">
                     <p>TikTok Streamer & Rapper</p>
                 </div>
+                <div class="footer-info">
+                    <h3>Over Silcas</h3>
+                    <p>Silcas is een gepassioneerde content creator die zijn talenten inzet als rapper en streamer. Met een unieke mix van gaming, muziek en entertainment bouwt hij een community van gelijkgestemde fans.</p>
+                    <div class="footer-features">
+                        <div class="footer-feature">
+                            <i class="fas fa-music"></i>
+                            <h4>Rap Muziek</h4>
+                            <p>Originele tracks met unieke flow en beats</p>
+                        </div>
+                        <div class="footer-feature">
+                            <i class="fas fa-gamepad"></i>
+                            <h4>Gaming Content</h4>
+                            <p>Dagelijkse streams en gameplay video's</p>
+                        </div>
+                        <div class="footer-feature">
+                            <i class="fas fa-video"></i>
+                            <h4>Entertainment</h4>
+                            <p>Creatieve video's en interactie met fans</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="footer-links">
+                    <h3>Snelle Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">Over Mij</a></li>
@@ -310,18 +359,25 @@ t<!DOCTYPE html>
                     </ul>
                 </div>
                 <div class="footer-social">
-                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-spotify"></i></a>
+                    <h3>Volg Mij</h3>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@tsf_silcas" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/silcasdewoordenaar/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCucenCmwZnzndMhohpN7oEA" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://open.spotify.com/artist/2hNhIx6AXSs7OYaFQDIJQZ?si=Z49WaxhfTxqR7kFOo-74xg" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+                        <a href="https://discord.gg/tsfsillygang" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.twitch.tv/tsf_silcas" target="_blank" title="Twitch"><i class="fab fa-twitch"></i></a>
+                    </div>
+                    <p class="social-text">Blijf op de hoogte van nieuwe muziek, streams en content!</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Silcas. Alle rechten voorbehouden.</p>
+                <p>&copy; 2025 Silcas. Alle rechten voorbehouden.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/music-player.js"></script>
 </body>
 </html>
